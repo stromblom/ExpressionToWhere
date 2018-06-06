@@ -2,18 +2,18 @@ branches:
   only:
   - master
 image: Visual Studio 2017
-# nuget:
-#   project_feed: true
-#   disable_publish_on_pr: true
+nuget:
+  project_feed: true
+  disable_publish_on_pr: true
 build_script:
     - ps: .\build.ps1
 artifacts:
 - path: build-artifacts/*.nupkg
   name: Packages
-# deploy:
-# - provider: NuGet
-#   name: Release
-#   api_key:
-#     secure: 
-#   on:
-#     branch: master
+deploy:
+- provider: NuGet
+  name: Release
+  api_key:
+    secure: e8DM/gNgs5BS4ZBVTHEJ1hbcdzkf+Xy3SUi7wxSvplJz3F543bvqSB/GEa0gHEio
+  on:
+    branch: master
