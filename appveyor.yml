@@ -1,6 +1,9 @@
 branches:
   only:
   - master
+skip_commits:
+  files:
+    - README.md
 image: Visual Studio 2017
 nuget:
   project_feed: true
