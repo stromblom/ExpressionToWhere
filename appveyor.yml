@@ -1,0 +1,17 @@
+branches:
+  only:
+  - master
+image: Visual Studio 2017
+configuration: Release
+platform: Any CPU
+# nuget:
+#   project_feed: true
+#   disable_publish_on_pr: true
+build_script:
+    - ps: .\build.ps1
+# provider: NuGet
+#   name: Release
+#   api_key:
+#     secure: 
+#   on:
+#     branch: master
