@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stromblom.ExpressionToWhere", "Stromblom.ExpressionToWhere\Stromblom.ExpressionToWhere.csproj", "{17F60A95-F26E-4E1C-BDE7-E3EE889EDFE0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stromblom.ExpressionToWhere.Tests", "Stromblom.ExpressionToWhere.Tests\Stromblom.ExpressionToWhere.Tests.csproj", "{9EF54F3E-381B-470C-B560-277ED5835F59}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{17F60A95-F26E-4E1C-BDE7-E3EE889EDFE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17F60A95-F26E-4E1C-BDE7-E3EE889EDFE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17F60A95-F26E-4E1C-BDE7-E3EE889EDFE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17F60A95-F26E-4E1C-BDE7-E3EE889EDFE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EF54F3E-381B-470C-B560-277ED5835F59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EF54F3E-381B-470C-B560-277ED5835F59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EF54F3E-381B-470C-B560-277ED5835F59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EF54F3E-381B-470C-B560-277ED5835F59}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {35F87C45-5583-4786-9E18-D399025A8C5F}
+	EndGlobalSection
+EndGlobal
