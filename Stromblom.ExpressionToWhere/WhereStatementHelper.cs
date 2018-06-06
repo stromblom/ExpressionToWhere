@@ -8,14 +8,14 @@ namespace Stromblom.ExpressionToWhere
 {
     public class WhereStatementHelper
     {
-        public static string GetWhereStatementAndParametersFromExpression<TSaga>(
-            Expression<Func<TSaga, bool>> expression)
+        public static (string Statement, Dictionary<string, object> Values) GetWhereStatementAndParametersFromExpression(
+            Expression expression)
         {
             List<(string, Comparison, object, Operator)> columnsAndValues = SqlExpressionVisitor.CreateFromExpression(expression);
-
+            var values = new Dictionary<string, object>();
             if (!columnsAndValues.Any())
             {
-                return string.Empty;
+                return (string.Empty, values);
             }
 
             var sb = new StringBuilder();
@@ -56,11 +56,11 @@ namespace Stromblom.ExpressionToWhere
                 }
 
                 sb.Append(valueName);
-
+                values.Add(valueName, value);
                 i++;
             }
 
-            return sb.ToString();
+            return (sb.ToString(), values);
         }
     }
 }
