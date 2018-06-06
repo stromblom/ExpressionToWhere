@@ -1,5 +1,5 @@
 var solutionPath = "./src/Stromblom.ExpressionToWhere.sln";
-var artifactPath = Directory("./nuget-packages");
+var artifactPath = Directory("./build-artifacts");
 DotNetCoreMSBuildSettings msBuildSettings = null;
 
 Task("Clean")
@@ -72,6 +72,6 @@ Task("Default")
     .IsDependentOn("Version")
     .IsDependentOn("Build")
     .IsDependentOn("Package");
-    
+
 var target = Argument("target", "Default");
 RunTarget(target);
