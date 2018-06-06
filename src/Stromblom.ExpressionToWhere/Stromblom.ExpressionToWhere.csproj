@@ -8,4 +8,11 @@
     <PackageReference Include="System.ValueTuple" Version="4.4.0" />
   </ItemGroup>
 
+  <PropertyGroup>
+    <Description></Description>
+    <Authors>stromblom</Authors>
+    <PackageLicenseUrl>https://github.com/stromblom/ExpressionToWhere/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/stromblom/ExpressionToWhere</PackageProjectUrl>
+  </PropertyGroup>
+
 </Project>
